@@ -1,6 +1,4 @@
-import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.concurrent.Callable;
 
 class ArrayFilter {
 
@@ -17,6 +15,7 @@ class ArrayFilter {
         implement_list(list);
     }
 
+    // Filter Method ; Each targeted elements in targed array
     static boolean filter(Element ele) {
         if(ele.isTrue == true)
             return true;
@@ -24,6 +23,7 @@ class ArrayFilter {
         return false;
     }
 
+    // Implemented Method ; List of targetd array
     static void implement_list(ArrayList<Element> arr) {
         for(int i=0;i<arr.size();i++) {
             if(filter(arr.get(i)) == true)
@@ -32,6 +32,7 @@ class ArrayFilter {
     }
 }
 
+// Element in Array Class
 class Element {
     String name;
     Boolean isTrue;
